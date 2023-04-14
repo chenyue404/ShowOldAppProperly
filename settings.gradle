@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+//        google()
+//        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public' }//central仓和jcenter仓的聚合仓
+        maven { url 'https://maven.aliyun.com/repository/google' }//https://maven.google.com/
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+//        google()
+//        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public' }//central仓和jcenter仓的聚合仓
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        mavenCentral()//https://maven.google.com/
+    }
+}
+rootProject.name = "老应用正常显示"
+include ':app'
